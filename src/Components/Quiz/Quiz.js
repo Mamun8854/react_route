@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
+import QuizDetails from "../QuizDetails/QuizDetails";
 
-const Quiz = ({ q }) => {
-  const { logo, name, total } = q;
+const Quiz = () => {
+  const { data } = useLoaderData();
+  const { questions } = data;
+
+  //   const { quizId } = useParams();
+  //   const [datas, setData] = useState();
+  //   useEffect(() => {
+  //     fetch(`https://openapi.programming-hero.com/api/quiz/${quizId}`)
+  //       .then((res) => res.json())
+  //       .then((result) => setData(result));
+  //   }, [quizId]);
   return (
-    <div className="bg-gray-300 rounded-md">
-      <img className="w-full" src={logo} alt="" />
-      <div className="m-4">
-        <p>
-          Quiz Topic : <span className="font-extrabold">{name}</span>
-        </p>
-        <div className="flex justify-between">
-          <p>
-            Total Quiz :{" "}
-            <span className="text-red-500 font-medium">{total}</span>
-          </p>
-          <button className="font-semibold bg-orange-300 px-3 rounded">
-            Lets Try
-          </button>
-        </div>
-      </div>
+    <div className="grid md:grid-cols-2   bg-gray-100">
+      {questions.map((q) => (
+        <QuizDetails key={q.id} q={q}></QuizDetails>
+      ))}
     </div>
   );
 };
