@@ -10,15 +10,16 @@ const Home = () => {
   //   console.log(data);
   return (
     <div>
-      <section className="flex justify-between w-11/12 mx-auto my-24">
+      <section className="md:flex md:justify-between w-11/12 mx-auto my-24">
         <div className="w-5/12">
           <h1
             style={{ lineHeight: "60px" }}
             className="text-5xl font-extrabold mb-6 pt-16"
           >
-            Easy and intuitive online testing.
+            Easy and <span className="text-yellow-400">intuitive</span> online
+            testing<span className="text-yellow-400">.</span>
           </h1>
-          <p className="text-xl ">
+          <p className="text-xl text-gray-500">
             This is a cloud-testing platform that supports online creation and
             delivery of feature-rich tests.
           </p>
