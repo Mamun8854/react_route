@@ -22,7 +22,7 @@ const Home = () => {
             This is a cloud-testing platform that supports online creation and
             delivery of feature-rich tests.
           </p>
-          <button className="bg-yellow-400 px-12 text-base font-bold py-4 rounded mt-20">
+          <button className="bg-yellow-400 px-12 text-base font-bold py-4 rounded-full mt-20">
             Start Practice
           </button>
         </div>

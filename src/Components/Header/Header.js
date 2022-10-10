@@ -6,27 +6,33 @@ const Header = () => {
   return (
     <div>
       <div>
-        <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
-          <div className="container flex justify-between h-16 mx-auto">
+        <header className="p-4 bg-white text-black">
+          <div className="container flex justify-between align-middle h-14 mx-auto">
             <a
               rel="noopener noreferrer"
               to="#"
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
-              <div>
-                <img src={img} alt="" />
+              <div className="flex">
+                <img src={img} alt="" />{" "}
+                <h1
+                  style={{ lineHeight: "20px" }}
+                  className="ml-2 pt-0.5 font-bold text-lg"
+                >
+                  Improve<br></br>Your<br></br>Skill
+                </h1>
               </div>
             </a>
-            <ul className="items-stretch hidden space-x-3 md:flex">
+            <ul className="items-stretch hidden space-x-8 md:flex md:align-middle">
               <li className="flex">
                 <NavLink
                   rel="noopener noreferrer"
-                  to="/"
+                  to="/home"
                   className={({ isActive }) => {
                     return isActive
-                      ? "underline text-sky-500  underline-offset-8 font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                      : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400";
+                      ? "underline text-yellow-400 underline-offset-8 font-medium tracking-wide text-yellow-400 transition-colors duration-200 hover:text-teal-accent-400 py-0.5"
+                      : "font-medium tracking-wide text-black  transition-colors duration-200 hover:text-teal-accent-400 py-0.5";
                   }}
                 >
                   Home
@@ -38,8 +44,8 @@ const Header = () => {
                   to="/static"
                   className={({ isActive }) => {
                     return isActive
-                      ? "underline text-sky-500  underline-offset-8 font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                      : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400";
+                      ? "underline text-yellow-400   underline-offset-8 font-medium tracking-wide text-yellow-400  transition-colors duration-200 hover:text-teal-accent-400 py-0.5"
+                      : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400 py-0.5";
                   }}
                 >
                   Static
@@ -52,8 +58,8 @@ const Header = () => {
                   to="/blog"
                   className={({ isActive }) => {
                     return isActive
-                      ? "underline text-sky-500  underline-offset-8 font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                      : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400";
+                      ? "underline text-yellow-400   underline-offset-8 font-medium tracking-wide text-yellow-400  transition-colors duration-200 hover:text-teal-accent-400 py-0.5"
+                      : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400 py-0.5";
                   }}
                 >
                   Blog

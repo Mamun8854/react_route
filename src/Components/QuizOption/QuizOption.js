@@ -5,7 +5,7 @@ const QuizOption = ({ q }) => {
   const { logo, name, total } = q;
   // console.log(q);
   return (
-    <div className="bg-gray-300 rounded-md">
+    <div className="bg-gray-100 rounded-md">
       <img className="w-full" src={logo} alt="" />
       <div className="m-4">
         <p>
