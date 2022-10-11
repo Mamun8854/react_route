@@ -47,7 +47,9 @@ function App() {
         { path: "/blog", element: <Blog></Blog> },
         {
           path: "*",
-          element: <h1>404 Not Found</h1>,
+          element: (
+            <h1 className="font-extrabold text-center mt-10">404 Not Found</h1>
+          ),
         },
       ],
     },

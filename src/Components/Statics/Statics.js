@@ -18,7 +18,7 @@ const Statics = () => {
   console.log(name);
   return (
     <div>
-      <div className="bg-slate-200 w-11/12 mx-auto text-center">
+      <div className="bg-slate-200 w-11/12 mx-auto text-center rounded">
         <h1 className="text-2xl mb-8 font-bold py-4">
           Total Quiz <span className="text-yellow-500">Static</span>
         </h1>
@@ -26,7 +26,7 @@ const Statics = () => {
       <div className="bg-slate-300 w-11/12 mx-auto rounded flex justify-center py-4">
         <LineChart
           width={390}
-          height={300}
+          height={200}
           data={data}
           margin={{
             top: 5,

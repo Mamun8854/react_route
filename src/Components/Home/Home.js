@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <section className="md:flex md:justify-between w-11/12 mx-auto my-24">
-        <div className="md:w-5/12 text-center ">
+        <div className="md:w-5/12 md:text-left text-center ">
           <h1
             style={{ lineHeight: "60px" }}
             className="text-5xl font-extrabold mb-6 pt-16 "
