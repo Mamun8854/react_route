@@ -36,14 +36,25 @@ function App() {
           element: <Quiz></Quiz>,
         },
         { path: "" },
-        { path: "/static", element: <Statics></Statics> },
+        {
+          path: "/static",
+
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
+          element: <Statics></Statics>,
+        },
         { path: "/blog", element: <Blog></Blog> },
+        {
+          path: "*",
+          element: <h1>404 Not Found</h1>,
+        },
       ],
     },
-    {
-      path: "*",
-      element: <h1>404 Not Found</h1>,
-    },
+    // {
+    //   path: "*",
+    //   element: <h1>404 Not Found</h1>,
+    // },
   ]);
   return (
     <div>
