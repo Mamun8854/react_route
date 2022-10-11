@@ -35,7 +35,7 @@ function App() {
           },
           element: <Quiz></Quiz>,
         },
-        { path: "" },
+
         {
           path: "/static",
 
@@ -53,10 +53,10 @@ function App() {
         },
       ],
     },
-    // {
-    //   path: "*",
-    //   element: <h1>404 Not Found</h1>,
-    // },
+    {
+      path: "*",
+      element: <h1>404 Not Found</h1>,
+    },
   ]);
   return (
     <div>
