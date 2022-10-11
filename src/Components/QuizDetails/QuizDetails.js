@@ -30,8 +30,8 @@ const QuizDetails = ({ q }) => {
           <h1 className="text-base font-bold mb-6">{question}</h1>
 
           <div className="text-sm flex flex-col gap-5 p-6">
-            {options.map((option) => (
-              <div>
+            {options.map((option, idx) => (
+              <div key={idx}>
                 <label className="form-check-label  justify-self-start items-start flex md:gap-5 gap-2 text-left">
                   <input
                     type="radio"

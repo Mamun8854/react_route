@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const QuizOption = ({ q }) => {
@@ -6,10 +6,10 @@ const QuizOption = ({ q }) => {
   // console.log(q);
   return (
     <div>
-      <div className="bg-gray-100 rounded-md relative">
+      <div className="bg-gray-100 rounded-md relative p-5">
         <img className="w-full h-full" src={logo} alt="" />
         <div className="m-4">
-          <div className="flex justify-between py-10 ">
+          <div className="flex justify-between py-8 ">
             <p className="text-base">
               Quiz Topic : <span className="font-extrabold">{name}</span>
             </p>
@@ -19,9 +19,7 @@ const QuizOption = ({ q }) => {
             </p>
           </div>
           <div className="text-center px-4 py-3 bg-yellow-500 w-full rounded font-medium">
-            <Link to={`/quiz/${q.id}`}>
-              <button>Lets Try</button>
-            </Link>
+            <Link to={`/quiz/${q.id}`}>Lets Start</Link>
           </div>
         </div>
       </div>

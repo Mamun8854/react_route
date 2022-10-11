@@ -8,7 +8,7 @@ const Header = () => {
     <div>
       <div>
         <header className="p-4 bg-white text-black">
-          <div className="container flex justify-between align-middle h-14 mx-auto">
+          <div className="container flex justify-between align-middle h-14 md:px-9 mx-auto">
             <Link
               rel="noopener noreferrer"
               to="/"

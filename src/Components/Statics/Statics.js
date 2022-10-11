@@ -14,8 +14,8 @@ const Statics = () => {
   const quizTopics = useLoaderData();
   const { data } = quizTopics;
   const info = data[0];
-  const { total, name } = info;
-  console.log(name);
+  // const { total, name } = info;
+
   return (
     <div>
       <div className="bg-slate-200 w-11/12 mx-auto text-center rounded">
