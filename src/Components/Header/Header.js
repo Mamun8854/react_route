@@ -121,7 +121,7 @@ const Header = () => {
                       </div>
                     </div>
                     <nav>
-                      <ul className="space-y-4 text-center">
+                      <ul className="text-center">
                         <li>
                           <NavLink
                             to="/home"
@@ -132,28 +132,21 @@ const Header = () => {
                             Home
                           </NavLink>
                         </li>
-                        <li>
-                          <NavLink
-                            to="/quiz"
-                            className="font-medium tracking-wide hover:text-blue-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Quiz
-                          </NavLink>
-                        </li>
+
                         <li>
                           <NavLink
                             to="/static"
                             className="font-medium tracking-wide hover:text-blue-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Static
+                            Statics
                           </NavLink>
                         </li>
                         <li>
                           <NavLink
-                            to="/"
+                            to="/blog"
                             className="font-medium tracking-wide hover:text-blue-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            About us
+                            Blog
                           </NavLink>
                         </li>
                       </ul>

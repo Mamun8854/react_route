@@ -1,14 +1,11 @@
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
 import React from "react";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 const QuizDetails = ({ q }) => {
   const { question, correctAnswer, options } = q;
-  console.log(question);
+
   const handleAnswer = (option, clicked) => {
     if (option === clicked) {
       Swal.fire("Good job!", "Correct Answer!", "success");
@@ -19,6 +16,12 @@ const QuizDetails = ({ q }) => {
         text: "Wrong Answer!",
       });
     }
+  };
+
+  // see correct answer handler
+
+  const seeCorrectAnswer = () => {
+    Swal.fire(`${correctAnswer}`);
   };
   return (
     <div>
@@ -44,6 +47,13 @@ const QuizDetails = ({ q }) => {
               </div>
             ))}
           </div>
+          <button
+            onClick={seeCorrectAnswer}
+            className="bg-yellow-500 py-2 px-4 rounded font-semibold text-center"
+          >
+            <FontAwesomeIcon icon={faEye} />
+            <span className="ml-2">See Correct Answer</span>
+          </button>
         </div>
       </div>
     </div>

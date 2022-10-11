@@ -18,7 +18,7 @@ const QuizOption = ({ q }) => {
               <span className="text-red-500 font-extrabold">{total}</span>
             </p>
           </div>
-          <div className="text-center px-4 py-3 bg-yellow-500 w-full rounded">
+          <div className="text-center px-4 py-3 bg-yellow-500 w-full rounded font-medium">
             <Link to={`/quiz/${q.id}`}>
               <button>Lets Try</button>
             </Link>
