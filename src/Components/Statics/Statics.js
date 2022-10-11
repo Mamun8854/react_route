@@ -25,7 +25,7 @@ const Statics = () => {
       </div>
       <div className="bg-slate-300 w-11/12 mx-auto rounded flex justify-center py-4">
         <LineChart
-          width={390}
+          width={350}
           height={200}
           data={data}
           margin={{
