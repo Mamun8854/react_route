@@ -8,7 +8,7 @@ const QuizDetails = ({ q }) => {
 
   const handleAnswer = (option, clicked) => {
     if (option === clicked) {
-      Swal.fire("Good job!", "Correct Answer!", "success");
+      Swal.fire("Great!", "Correct Answer!", "success");
     } else {
       Swal.fire({
         icon: "error",

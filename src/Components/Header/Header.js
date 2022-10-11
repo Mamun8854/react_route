@@ -9,9 +9,9 @@ const Header = () => {
       <div>
         <header className="p-4 bg-white text-black">
           <div className="container flex justify-between align-middle h-14 mx-auto">
-            <a
+            <Link
               rel="noopener noreferrer"
-              to="#"
+              to="/"
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
@@ -24,7 +24,7 @@ const Header = () => {
                   Improve<br></br>Your<br></br>Skill
                 </h1>
               </div>
-            </a>
+            </Link>
             <ul className="items-stretch hidden space-x-8 md:flex md:align-middle">
               <li className="flex">
                 <NavLink
