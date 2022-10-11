@@ -13,7 +13,7 @@ const Quiz = () => {
           Quiz Of : <span className="text-yellow-600">{name}</span>
         </h1>
       </div>
-      <div className="grid md:grid-cols-2   bg-gray-100">
+      <div className="grid md:grid-cols-2   bg-gray-100 w-full mx-auto">
         {questions.map((q) => (
           <QuizDetails key={q.id} q={q}></QuizDetails>
         ))}

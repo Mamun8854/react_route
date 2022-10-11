@@ -7,20 +7,20 @@ const QuizOption = ({ q }) => {
   return (
     <div>
       <div className="bg-gray-100 rounded-md relative">
-        <img className="w-full" src={logo} alt="" />
+        <img className="w-full h-full" src={logo} alt="" />
         <div className="m-4">
-          <div className="flex justify-between mb-20 ">
-            <p>
+          <div className="flex justify-between py-10 ">
+            <p className="text-base">
               Quiz Topic : <span className="font-extrabold">{name}</span>
             </p>
-            <p>
+            <p className="text-base">
               Total Quiz :{" "}
-              <span className="text-red-500 font-medium">{total}</span>
+              <span className="text-red-500 font-extrabold">{total}</span>
             </p>
           </div>
-          <div className="absolute bottom-0 right-0 mt-4 w-full bg-slate-400 text-center font-semibold py-2 rounded">
+          <div className="text-center px-4 py-3 bg-yellow-500 w-full rounded">
             <Link to={`/quiz/${q.id}`}>
-              <button className="">Lets Try</button>
+              <button>Lets Try</button>
             </Link>
           </div>
         </div>

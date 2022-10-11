@@ -29,12 +29,12 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="mt-10 md:mt-0">
+        <div className="mt-10 md:mt-0 hidden md:visible">
           <img style={{ height: "400", width: "400" }} src={img} alt="" />
         </div>
       </section>
 
-      <div className="grid md:grid-cols-3 gap-4 w-11/12 mx-auto mt-5 mb-40">
+      <div className="grid md:grid-cols-4 gap-4 w-11/12 mx-auto mt-5 mb-40">
         {data.map((q) => (
           <QuizOption key={q.id} q={q}></QuizOption>
         ))}
