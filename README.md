@@ -4,7 +4,7 @@ In this site you find some programming language basic quizes. That's help build 
 
 # Language Use For This Site
 
-React.js, React Router, tailwind css, custom css, JavaScript
+React.js, React Router, tailwind css, Vanila CSS, JavaScript
 
 # Live Link Of This Site
 
