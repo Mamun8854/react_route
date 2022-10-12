@@ -35,7 +35,7 @@ const QuizDetails = ({ q }) => {
                 <label className="form-check-label  justify-self-start items-start flex md:gap-5 gap-2 text-left">
                   <input
                     type="radio"
-                    name="radio"
+                    name={correctAnswer}
                     className="form-check-input flex-none  md:w-5 md:h-5"
                     onClick={() => handleAnswer(option, correctAnswer)}
                   />
