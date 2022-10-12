@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="bg-gray-100 p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6  mb-12 ">
-      <div className=" bg-white rounded flex flex-col float-left p-6 gap-4 h-80">
+      <div className=" bg-white rounded flex flex-col float-left p-6 gap-4 h-80 md:relative">
         <h1 className="text-xl font-bold">
           What is the <span className="text-yellow-500">purpose of React</span>{" "}
           ?

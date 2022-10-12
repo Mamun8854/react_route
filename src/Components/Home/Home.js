@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 w-11/12 mx-auto mt-5 mb-40">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 w-11/12 mx-auto mt-5 mb-40">
         {data.map((q) => (
           <QuizOption key={q.id} q={q}></QuizOption>
         ))}
