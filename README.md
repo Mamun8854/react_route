@@ -2,7 +2,7 @@
 
 In this site you find some programming language basic quizes. That's help build strong your learning point of programming language .
 
-# [Live Link](https://react-route-assignment.netlify.app/)
+# [Live Link](react-route-8854.netlify.app)
 
 # Language Use For This Site
 
@@ -10,7 +10,7 @@ React.js, React Router, tailwind css, Vanila CSS, JavaScript
 
 # Live Link Of This Site
 
-https://react-route-assignment.netlify.app/
+react-route-8854.netlify.app
 
 # Description
 
