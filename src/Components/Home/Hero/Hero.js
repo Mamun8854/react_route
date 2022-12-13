@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="md:w-5/12 md:text-left text-center ">
             <h1
               style={{ lineHeight: "60px" }}
-              className="lg:text-5xl text-3xl font-extrabold mb-6 pt-16 "
+              className="lg:text-4xl text-3xl font-extrabold mb-6 pt-16 "
             >
               Easy and <span className="text-yellow-300">intuitive</span> online
               testing<span className="text-yellow-300">.</span>
@@ -29,7 +29,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className="mt-10 md:mt-0">
-            <img style={{ height: "400px", width: "400px" }} src={Img} alt="" />
+            <img style={{ height: "300px", width: "400px" }} src={Img} alt="" />
           </div>
         </div>
 
