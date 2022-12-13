@@ -49,10 +49,10 @@ const QuizDetails = ({ q }) => {
           </div>
           <button
             onClick={seeCorrectAnswer}
-            className="bg-yellow-500 py-2 px-4 rounded font-semibold text-center"
+            className="bg-yellow-300 py-2 px-4 rounded font-semibold text-center text-gray-600"
           >
             <FontAwesomeIcon icon={faEye} />
-            <span className="ml-2">See Correct Answer</span>
+            <span className="ml-2">Correct Answer</span>
           </button>
         </div>
       </div>
