@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="md:flex md:justify-between  w-11/12 mx-auto my-24">
           <div className="md:w-5/12 md:text-left text-center ">
             <h1
-              style={{ lineHeight: "60px" }}
+              style={{ lineHeight: "50px" }}
               className="lg:text-4xl text-3xl font-extrabold mb-6 pt-16 "
             >
               Easy and <span className="text-yellow-300">intuitive</span> online
@@ -23,7 +23,7 @@ const Hero = () => {
               delivery of feature-rich tests.
             </p>
             <Link>
-              <button className="bg-yellow-400 px-12 text-base font-bold py-4 rounded-full mt-20 ">
+              <button className="bg-yellow-400 px-10 text-base font-bold py-4 rounded-full mt-10 ">
                 Start Practice
               </button>
             </Link>
@@ -33,10 +33,15 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 w-11/12 mx-auto mt-5 mb-40">
-          {data.map((q) => (
-            <QuizOption key={q.id} q={q}></QuizOption>
-          ))}
+        <div>
+          <h2 className="text-yellow-400 font-bold text-3xl text-center pb-20">
+            Quiz Topics Here{" "}
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-11/12 mx-auto mt-5 mb-40">
+            {data.map((q) => (
+              <QuizOption key={q.id} q={q}></QuizOption>
+            ))}
+          </div>
         </div>
       </div>
     </section>
