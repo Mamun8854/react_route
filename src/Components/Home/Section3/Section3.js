@@ -10,7 +10,7 @@ const Section3 = () => {
           Learn About Quiz Topics
         </h2>
         <div className=" dark:text-gray-100 rounded-xl">
-          <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+          <div className="container flex flex-col-reverse justify-center p-6 mx-auto  lg:flex-row lg:justify-between">
             <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left gap-y-4 font-semibold text-gray-500">
               <div className="flex items-center justify-center gap-x-6">
                 <FaReact className="h-[120px] w-[120px]  text-yellow-400"></FaReact>
@@ -25,24 +25,6 @@ const Section3 = () => {
                   JavaScript, often abbreviated as JS, is a programming language
                   that is one of the core technologies of the World Wide Web,
                   alongside HTML and CSS.
-                </p>
-              </div>
-              <div className="flex items-center justify-center gap-x-6">
-                <FaCss3 className="h-[170px] w-[170px] text-yellow-400"></FaCss3>
-                <p>
-                  Cascading Style Sheets is a style sheet language used for
-                  describing the presentation of a document written in a markup
-                  language such as HTML or XML. CSS is a cornerstone technology
-                  of the World Wide Web, alongside HTML and JavaScript.
-                </p>
-              </div>
-              <div className="flex items-center justify-center gap-x-6">
-                <FaGitSquare className="h-[170px] w-[170px] text-yellow-400"></FaGitSquare>
-                <p>
-                  Cascading Style Sheets is a style sheet language used for
-                  describing the presentation of a document written in a markup
-                  language such as HTML or XML. CSS is a cornerstone technology
-                  of the World Wide Web, alongside HTML and JavaScript.
                 </p>
               </div>
             </div>
