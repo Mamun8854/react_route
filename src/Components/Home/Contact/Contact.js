@@ -21,35 +21,44 @@ const Contact = () => {
             className="space-y-6 ng-untouched ng-pristine ng-valid  bg-white px-20 py-10  rounded-xl"
           >
             <div>
-              <label htmlFor="name" className="text-sm font-medium">
+              <label
+                htmlFor="name"
+                className="text-sm font-medium text-gray-600"
+              >
                 Full name
               </label>
               <input
                 id="name"
                 type="text"
                 placeholder=""
-                className="w-full p-3 rounded dark:bg-gray-800 bg-gray-100 font-semibold text-gray-600"
+                className="w-full p-3 rounded bg-gray-100 font-semibold text-gray-600"
               />
             </div>
             <div>
-              <label htmlFor="email" className="text-sm font-medium">
+              <label
+                htmlFor="email"
+                className="text-sm font-medium text-gray-600"
+              >
                 Email
               </label>
               <input
                 id="email"
                 type="email"
-                className="w-full p-3 rounded dark:bg-gray-800 bg-gray-100 font-semibold text-gray-600"
+                className="w-full p-3 rounded bg-gray-100 font-semibold text-gray-600"
                 data-temp-mail-org="1"
               />
             </div>
             <div>
-              <label htmlFor="message" className="text-sm font-medium">
+              <label
+                htmlFor="message"
+                className="text-sm font-medium text-gray-600"
+              >
                 Message
               </label>
               <textarea
                 id="message"
                 rows="3"
-                className="w-full p-3 rounded dark:bg-gray-800 bg-gray-100 font-semibold text-gray-600"
+                className="w-full p-3 rounded bg-gray-100 font-semibold text-gray-600"
               ></textarea>
             </div>
             <button

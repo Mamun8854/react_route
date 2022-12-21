@@ -6,7 +6,7 @@ const Quiz = () => {
   const { questions, name, total } = data;
 
   return (
-    <section>
+    <section className="mt-20">
       <div className=" bg-gray-200 mx-auto py-4 text-center">
         <h1 className="text-3xl font-bold">
           Quiz Of : <span className="text-yellow-600">{name}</span>

@@ -27,7 +27,9 @@ const QuizDetails = ({ q }) => {
     <div>
       <div className=" bg-white p-3 rounded-lg m-6">
         <div className="">
-          <h1 className="text-base font-bold mb-6">{question}</h1>
+          <h1 className="text-base font-bold mb-6">
+            {question?.replace(/(<p[^>]+?>|<p>|<\/p>)/gim, "")}
+          </h1>
 
           <div className="text-sm flex flex-col gap-5 p-6">
             {options.map((option, idx) => (

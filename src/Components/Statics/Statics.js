@@ -19,7 +19,7 @@ const Statics = () => {
   return (
     <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
       <div className="bg-slate-200 w-11/12 mx-auto text-center rounded">
-        <h1 className="text-2xl mb-8 font-bold py-4">
+        <h1 className="text-2xl mb-8 font-bold mt-24">
           Total Quiz <span className="text-yellow-500">Static</span>
         </h1>
       </div>
