@@ -6,10 +6,10 @@ const Section3 = () => {
   return (
     <section className="bg-gray-50">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <h2 className="text-4xl text-center font-bold text-yellow-400">
+        <h2 className="text-4xl text-center font-bold text-yellow-400 pb-20">
           Learn About Quiz Topics
         </h2>
-        <div className="dark:bg-gray-800 dark:text-gray-100">
+        <div className=" dark:text-gray-100 rounded-xl">
           <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left gap-y-4 font-semibold text-gray-500">
               <div className="flex gap-x-6">
