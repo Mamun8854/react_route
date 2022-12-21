@@ -18,7 +18,7 @@ const Contact = () => {
           </div>
           <form
             noValidate=""
-            className="space-y-6 ng-untouched ng-pristine ng-valid  bg-white p-20 rounded-xl"
+            className="space-y-6 ng-untouched ng-pristine ng-valid  bg-white px-20 py-10  rounded-xl"
           >
             <div>
               <label htmlFor="name" className="text-sm font-medium">
